@@ -1,0 +1,68 @@
+{
+  "split": "test",
+  "n_images": 150,
+  "confidence": 0.3,
+  "matching_iou": 0.5,
+  "imgsz": 320,
+  "device": "cpu",
+  "model_sha256": "2bd3ca9901c5f599938b8c1b88f1b9ae0c8e8ee602f5295e91d5999eff638c23",
+  "metrics": {
+    "yolo_class_aware": {
+      "tp": 748,
+      "fp": 225,
+      "fn": 174,
+      "precision": 0.7687564234326825,
+      "recall": 0.8112798264642083,
+      "f1": 0.7894459102902375
+    },
+    "yolo_localization": {
+      "tp": 803,
+      "fp": 170,
+      "fn": 119,
+      "precision": 0.8252826310380267,
+      "recall": 0.8709327548806941,
+      "f1": 0.8474934036939313
+    },
+    "opencv_localization": {
+      "tp": 439,
+      "fp": 1779,
+      "fn": 483,
+      "precision": 0.19792605951307485,
+      "recall": 0.4761388286334056,
+      "f1": 0.27961783439490445
+    }
+  },
+  "map50": 0.8425702521413448,
+  "map50_95": 0.5730071578903627,
+  "per_class_map50_95": [
+    0.5340067042037986,
+    0.3452942429584974,
+    0.502194469680376,
+    0.5078980667096195,
+    0.8296207303052798,
+    0.7190287334846055
+  ],
+  "latency_ms": {
+    "yolo": {
+      "median": 21.637350000219158,
+      "p95": 28.052484999807337,
+      "scope": "in-memory image to detections; excludes disk read, model load and drawing; CPU warmup performed"
+    },
+    "opencv": {
+      "median": 3.6031999993610953,
+      "p95": 4.119650000166075,
+      "scope": "in-memory image to detections; excludes disk read, model load and drawing; CPU warmup performed"
+    }
+  },
+  "protocol": "Original test membership; deterministic within-group 80/20 train/val. Image-disjoint, NOT board-group-disjoint.",
+  "notes": [
+    "OpenCV requires aligned defect-free template; YOLO consumes only tested image",
+    "OpenCV has no defect classification; compare localization columns only",
+    "Validation selects confidence. Test metrics are descriptive, not a production guarantee",
+    "Timed on this machine with possible concurrent workloads; not a controlled hardware benchmark"
+  ],
+  "baseline_parameters": {
+    "tolerance": 1,
+    "min_area": 32
+  }
+}

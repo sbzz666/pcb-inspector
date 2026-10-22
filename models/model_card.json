@@ -1,0 +1,28 @@
+{
+  "architecture": "YOLO11n",
+  "pretrained": "Ultralytics COCO yolo11n.pt",
+  "ultralytics": "8.3.221",
+  "torch": "2.14.1+cpu",
+  "python": "3.12.8",
+  "device": "cpu",
+  "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+  "threads": 4,
+  "config": {
+    "epochs": 30,
+    "imgsz": 320,
+    "batch": 8,
+    "device": "cpu",
+    "threads": 4,
+    "name": "pcb_yolo11n",
+    "resume": "runs\\pcb_yolo11n\\weights\\last.pt"
+  },
+  "run": "runs/pcb_yolo11n",
+  "training_seconds": 577.0755466,
+  "sha256": "2bd3ca9901c5f599938b8c1b88f1b9ae0c8e8ee602f5295e91d5999eff638c23",
+  "limitations": [
+    "Public preprocessed DeepPCB images; some defects artificially augmented by dataset authors",
+    "No factory deployment or live-camera validation",
+    "Image-disjoint protocol; board groups can overlap",
+    "CPU portfolio subset; see data audit for exact counts"
+  ]
+}

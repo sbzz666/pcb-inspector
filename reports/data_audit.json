@@ -1,0 +1,38 @@
+{
+  "images": {
+    "train": 320,
+    "val": 80,
+    "test": 150
+  },
+  "boxes": {
+    "train": {
+      "mousebite": 425,
+      "short": 324,
+      "spur": 372,
+      "copper": 324,
+      "pin-hole": 348,
+      "open": 417
+    },
+    "val": {
+      "open": 105,
+      "short": 89,
+      "mousebite": 126,
+      "copper": 91,
+      "pin-hole": 78,
+      "spur": 93
+    },
+    "test": {
+      "open": 191,
+      "short": 132,
+      "mousebite": 171,
+      "spur": 147,
+      "copper": 145,
+      "pin-hole": 136
+    }
+  },
+  "duplicate_ids": 0,
+  "duplicate_pixel_hashes": 0,
+  "protocol": "Original test membership; deterministic within-group 80/20 train/val. Image-disjoint, NOT board-group-disjoint.",
+  "dataset_is_subset": true,
+  "archive_sha256": null
+}
